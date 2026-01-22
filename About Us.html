@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Business Project</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,300;1,600&family=Roboto+Condensed&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/logo 01.jpg" height="95px" width="130px"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About Us.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact us.html">Contact</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>About Us</h1>
+        </section>
+        
+        <!--About Us content-->
+        
+        <section class="about-us">
+            
+        <div class="row">
+            <div class="about-col">
+                <h1>We are South Africa's best recommended construction company</h1>
+                <p>We take immense pride in delivering exceptional quality and service to all our clients. With a track record spanning over a decade, we have successfully completed a diverse range of projects, from residential and commercial developments to infrastructure and industrial projects. Our commitment to excellence, innovation, and sustainability sets us apart as a leader in the construction industry. we prioritize collaboration and communication at every stage of the project. Our team of skilled architects, engineers, project managers, and skilled tradespeople work seamlessly together to ensure that each project is executed with precision and attention to detail. We understand that every project is unique, and we tailor our approach to meet the specific needs and goals of our clients.</p>
+            </div>   
+             <div class="about-col">
+            <img src="images/banner 3.jpg">
+             </div>
+            </div>    
+        </section>
+        
+        <!--Footer -->
+        
+        <section class="footer">
+        <h3>About Us</h3>
+        <p>At Ultra Phoenix Projects,<br> We transform visions into reality through innovative construction solutions and unwavering commitment to excellence.<br></p>
+        <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-telegram"></i>
+        </div>
+        copyright <i class="fa-regular fa-copyright"></i> 2023, Ultra Phoenix Projects | Created by Matlhaga Amogelang & Msimango Vuyo
+        </section>
+        
+        <!-- JavaScript for Toggle Menu -->
+        <script>
+          
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+         function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+        
+        </script>
+        
+    </body>
+</html>

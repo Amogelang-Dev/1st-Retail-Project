@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Business Project</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,300;1,600&family=Roboto+Condensed&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/logo 01.jpg" height="95px" width="130px"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About Us.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact us.html">Contact</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Our Services</h1>
+        </section>
+        
+        <!--services-->
+        
+        <section>
+            
+        
+            <div class="services">
+            <h1>Constructions</h1>
+            <p>Services include:<br> Wall repairs,Tiling,Laminate flooring,<br>Wooden flooring,Vinyl flooring,Stick down flooring,<br>Radiant floor heating,Painting and House planning.</p>
+            <img src="images/wall repairs.jpg">
+            
+            </div>
+          
+            <div class="services">
+            <h1>Kitchen Units Installations</h1>
+            <p>Services include:<br>Wall units, Standing Units and Kitchen repairs.</p>
+            <img src="images/wall units.jpg">
+            </div>
+            
+            <div class="services">
+            <h1>PV Installations</h1>
+            <p>Services include:<br>Solar panels, inverter installation and placement planning.</p>
+            <img src="images/inverter.jpg">
+            </div>
+          
+            <div class="services">
+            <h1>Plumbing</h1>
+            <p>Services include:<br>Indoor and Outdoor pipe installation, drainage system construction and repairs.</p>
+            <img src="images/piping.jpg">
+            </div>
+          
+              
+        </section>
+        
+        <!--Footer -->
+        
+        <section class="footer">
+        <h3>About Us</h3>
+        <p>At Ultra Phoenix Projects,<br> We transform visions into reality through innovative construction solutions and unwavering commitment to excellence.<br></p>
+        <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-telegram"></i>
+        </div>
+        copyright <i class="fa-regular fa-copyright"></i> 2023, Ultra Phoenix Projects | Created by Matlhaga Amogelang & Msimango Vuyo
+        </section>
+        
+        <!-- JavaScript for Toggle Menu -->
+        <script>
+          
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+         function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+        
+        </script>
+        
+    </body>
+</html>

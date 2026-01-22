@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Business Project</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,300;1,600&family=Roboto+Condensed&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/logo 01.jpg" height="95px" width="130px"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About Us.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact us.html">Contact</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Contact Us</h1>
+        </section><br><br>
+        
+        <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57179.83483323498!2d28.077713623211423!3d-26.39959672297508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e951d03f89bf9c1%3A0xd98492b05c893981!2sPalm%20Ridge%2C%20Katlehong%2C%201488!5e0!3m2!1sen!2sza!4v1696332079394!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        
+        <section>
+             <div class="services">
+             <h1>Our email address:</h1>
+             <i class="fa fa-envelope"></i>
+             <span>ultrapheonixprojects@gmail.com</span>
+            
+            </div>
+          
+            <div class="services">
+             <h1>Our contact number:</h1>
+             <i class="fa fa-phone"></i>
+             <span>(078) 574 5403</span>
+            </div>
+            
+            <div class="services">
+             <h1>Our physical address:</h1>
+             <i class="fa fa-location-dot"></i>
+             <span>9318 Beneus Street Palm Ridge, Ekurhuleni, Gauteng, 1488</span>
+            
+            </div>
+        </section>
+       
+       <div class="contact-box">
+            <h3>Contact Us for more information</h3>
+            <form class="contact-form" onsubmit="confirmation()" action="https://formsubmit.co/matlhagaamogelangrefilwe@gmail.com" method="POST">
+                <input type="text" id="name" placeholder="enter your name" required="">
+                <input type="email" id="email" placeholder="enter your email" required="">
+                <label>Select a quote:</label>
+                <select name="quote">
+                <option value="select">Constructions</option>
+                <option value="select">Kitchen Units Installations</option>
+                <option value="select">PV Installations</option>
+                <option value="select">Plumbing</option>
+                </select>
+                <textarea placeholder="write a message!" required=""></textarea>
+                <button class="button3" href="" onclick="confirmation()">send</button>
+                <button href="contact us.html" class="button3">reset</button>
+            </form>
+        </div>    
+          
+        <!--Footer -->
+        
+        <section class="footer">
+        <h3>About Us</h3>
+        <p>At Ultra Phoenix Projects,<br> We transform visions into reality through innovative construction solutions and unwavering commitment to excellence.<br></p>
+        <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-telegram"></i>
+        </div>
+        copyright <i class="fa-regular fa-copyright"></i> 2023, Ultra Phoenix Projects | Created by Matlhaga Amogelang & Msimango Vuyo
+        </section>
+        
+        <!-- JavaScript for Toggle Menu -->
+    <script>
+          
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+         function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+        
+        function confirmation(){
+            const name = form.name.value;
+            const email = form.email.value;
+            if(email===name)
+            {
+            message("information is incorrect");
+            return false;
+            }
+            else{
+                message("thank you for contacting us");
+                return true;
+            }
+        }
+        
+       
+    </script> 
+    </body>
+</html>
